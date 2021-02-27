@@ -53,7 +53,6 @@ public class PlayerController : MonoBehaviour {
                 isJumping = false;
 
             } 
-     
         }
 
         if(Input.GetKeyUp(KeyCode.Space)){
