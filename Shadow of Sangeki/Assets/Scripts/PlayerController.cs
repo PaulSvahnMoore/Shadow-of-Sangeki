@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate(){
-        moveInput = moveInput.GetAxisRaw("Horizontal")
-            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        moveInput = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 }
