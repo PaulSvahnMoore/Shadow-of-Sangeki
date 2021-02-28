@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    [Header ("Movement")]
     private Rigidbody2D rb;
     public float speed;
     public float jumpForce;
     private float moveInput;
 
+    [Header("Jump")]
     private bool isGrounded;
     public Transform feetPos;
     public float checkRadius;
