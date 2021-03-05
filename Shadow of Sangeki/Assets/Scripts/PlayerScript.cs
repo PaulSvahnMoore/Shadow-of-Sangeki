@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
-
+    
     public float speed;
     public float jumpForce;
     private float moveInput;
@@ -11,7 +11,6 @@ public class PlayerScript : MonoBehaviour {
     private Rigidbody2D rb;
 
     private bool facingRight = true;
-
 
     private bool isGrounded;
     public Transform groundCheck;
@@ -44,7 +43,6 @@ public class PlayerScript : MonoBehaviour {
 
         if (isGrounded == true) {
             extraJumps = extraJumpsValue;
-
         }
 
         if (Input.GetButtonDown("Jump") && extraJumps > 0) {
@@ -60,5 +58,5 @@ public class PlayerScript : MonoBehaviour {
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
-    }
+    } 
 }
